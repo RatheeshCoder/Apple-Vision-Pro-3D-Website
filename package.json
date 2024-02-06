@@ -1,0 +1,36 @@
+{
+  "name": "webgi-vanilla-typescript",
+  "version": "1.0.0",
+  "description": "WebGi + TypeScript example starter project",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --no-minify --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --verbose"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-0.4.7.tgz"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "assets",
+        "staticOutDir": "assets"
+      }
+    ]
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "gsap": "^3.11.1",
+    "push-dir": "^0.4.1",
+    "tweakpane": "^3.1.0"
+  }
+}
