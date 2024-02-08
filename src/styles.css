@@ -157,7 +157,7 @@ main {
 }
 
 .first h3 {
-  color: var(--grey);
+  color: var(--red);
   position: absolute;
   font-size: 9vw;
   white-space: nowrap;
